@@ -548,12 +548,16 @@ body .popup.popup_reg {position:absolute !important; margin-top: 0 !important;}
 body .popup-menu {position: absolute; left: 50%; top: 57px !important; width: 856px; height: auto; margin: 0 0 0 -428px; background: #d1bda6; z-index: 101;padding: 18px 0 3px; display: none;}
     .popup-menu ul {padding: 0; margin: 0; text-align: center;}
         .popup-menu li {display: inline-block; width: 166px;height: 143px; vertical-align: top; padding: 0; margin: 0; font: normal 12px 'Roboto Slab';}
-            .popup-menu li a {color: #4f0028; text-decoration: none; border-bottom: 1px solid #886262;}
-            .popup-menu li a:hover {color: #ff0012; border-bottom: 1px solid #ff0012;}
-        .popup-menu li.active a {color: #ff0012; cursor: default; border-bottom: 1px solid #ff0012;}
+            .popup-menu li a {color: #4f0028; text-decoration: none;}
+            .popup-menu li a:hover {color: #ff0012;}
+        .popup-menu li.active a {color: #ff0012; cursor: default;}
+            .popup-menu li a span {border-bottom: 1px solid #886262;}
+            .popup-menu li a:hover span {border-bottom: 1px solid #ff0012;}
+            .popup-menu li.active a span {border-bottom: 1px solid #ff0012;}
+
 .lnk-lavka {float: right;padding: 41px 12px 0 0;}
-    .lnk-lavka a {font-size: 14px; color: #47060f; text-decoration: underline; font-family: 'Times New Roman'; text-transform: uppercase;}
-    .lnk-lavka a:hover {color: #ff0012;}
+    .lnk-lavka a {font-size: 14px; color: #47060f; text-decoration: underline; font-family: 'Times New Roman'; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid #886262;}
+    .lnk-lavka a:hover {color: #ff0012; border-bottom: 1px solid #ff0012;}
         .lnk-lavka a span {font-size: 18px;}
 .list-simvol {text-align: center;padding: 0 0 50px; margin: 0;}
     .list-simvol li {list-style: none; margin: 0 14px; display: inline-block; width: 49px; height: 49px; vertical-align: top;}
