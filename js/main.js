@@ -221,6 +221,14 @@ $(document).ready(function() {
 	};
 
 
+	$('.menu-lnk').hover(function(){
+		$('.head').addClass('active');
+	},
+	function(){
+		$('.head').removeClass('active');
+	});
+
+
 	
 
 
@@ -286,7 +294,7 @@ function loadPopup(popup){
 
 function loadPopupMenu(popup){  
 	if(popupStatus==0){
-		$(".popup_bg-w").fadeIn("slow");
+		$(".popup_bg-w").fadeIn(200);
 		$(popup).fadeIn("slow");
 		var popupTop = $(window).scrollTop() + 50;
 		console.log(popupTop);
@@ -297,7 +305,7 @@ function loadPopupMenu(popup){
 	
 function disablePopup(){ 
 	if(popupStatus==1){
-		$(".popup_bg, .popup_bg-w").fadeOut("slow");
+		$(".popup_bg, .popup_bg-w").fadeOut(200);
 		$(".popup").fadeOut("slow");
 		$('body').removeClass('bluer')
 		popupStatus = 0;

@@ -538,6 +538,7 @@ body .popup.popup_reg {position:absolute !important; margin-top: 0 !important;}
     .basket-total.active:before {background: url(../img/total-active.png) 0 0 no-repeat;}
 
 .head {height: 57px; background: #c9b59e;}
+.head.active {background: #e4cdb3;} 
     .head-center {width: 1000px; margin: 0 auto; height: 57px; position: relative; z-index: 10;}
         .head-center:before {position: absolute; right: 100%; content: ' '; height: 57px; background: #47060f; width: 1000px;}
         .head-menu-act {float: left; background: #47060f; height: 53px; padding: 4px 17px 0 3px;line-height: 46px; color: #d3a67a; font-size: 18px; font-family: 'Roboto Slab', serif;}
@@ -547,28 +548,35 @@ body .popup.popup_reg {position:absolute !important; margin-top: 0 !important;}
 body .popup-menu {position: absolute; left: 50%; top: 57px !important; width: 856px; height: auto; margin: 0 0 0 -428px; background: #d1bda6; z-index: 101;padding: 18px 0 3px; display: none;}
     .popup-menu ul {padding: 0; margin: 0; text-align: center;}
         .popup-menu li {display: inline-block; width: 166px;height: 143px; vertical-align: top; padding: 0; margin: 0; font: normal 12px 'Roboto Slab';}
-            .popup-menu li a {color: #4f0028; text-decoration: underline;}
-            .popup-menu li a:hover {color: #ff0012;}
-        .popup-menu li.active a {color: #ff0012; cursor: default;}
+            .popup-menu li a {color: #4f0028; text-decoration: none; border-bottom: 1px solid #886262;}
+            .popup-menu li a:hover {color: #ff0012; border-bottom: 1px solid #ff0012;}
+        .popup-menu li.active a {color: #ff0012; cursor: default; border-bottom: 1px solid #ff0012;}
 .lnk-lavka {float: right;padding: 41px 12px 0 0;}
     .lnk-lavka a {font-size: 14px; color: #47060f; text-decoration: underline; font-family: 'Times New Roman'; text-transform: uppercase;}
     .lnk-lavka a:hover {color: #ff0012;}
         .lnk-lavka a span {font-size: 18px;}
 .list-simvol {text-align: center;padding: 0 0 50px; margin: 0;}
-    .list-simvol li {list-style: none; margin: 0 14px; display: inline-block; width: 46px; height: 46px; vertical-align: top;}
+    .list-simvol li {list-style: none; margin: 0 14px; display: inline-block; width: 49px; height: 49px; vertical-align: top;}
+        .list-simvol li a {display: block; position: relative;}
+            .list-simvol li a:hover:before {position: absolute; content: ' '; top: -4px; left: -4px; display: block; width: 53px; height: 53px; border: 2px solid #bca185;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;}
 .simvol-tab {position: relative; text-align: center; width: 762px; height: 922px; margin: 0 auto -200px; position: relative;}
     .simvol-comment {position: absolute;top: 6px;left: -63px; width: 185px; font: normal 13px 'Roboto Slab'; text-align: left;}
         .simvol-comment h3 {font-size: 22px; font-weight: bold;margin: 0 0 5px;}
 .simvol-tab-cont {position: relative;}
-    .tab-next {position: absolute;right: 12px;top: 124px; width: 62px; height: 97px; background: url(../img/tab-next.png) 0 0 no-repeat;}
-    .tab-prev {position: absolute;left: 3px; top: 122px; width: 62px; height: 97px; background: url(../img/tab-prev.png) 0 0 no-repeat;}
+    .tab-next {position: absolute;right: 12px;top: 124px; width: 62px; height: 97px; background: url(../img/arrows.png) -124px 0 no-repeat;}
+    .tab-prev {position: absolute;left: 3px; top: 122px; width: 62px; height: 97px; background: url(../img/arrows.png) -62px 0 no-repeat;}
+    .tab-next:hover {background-position: -186px 0;}
+    .tab-prev:hover {background-position: 0 0;}
 .simvol-com {background: url(../img/pattern_flowers.jpg) center 0 repeat; height: 462px; padding: 35px 0 0;}
     .simvol-com-t {width: 978px; height: 47px; margin: 0 auto; background: url(../img/simvol-com-t.png) 0 0 no-repeat;}
     .simvol-com-c {width: 779px; padding: 82px 113px 1px 86px; margin: 0 auto; background: url(../img/simvol-com-c.png) 0 0 repeat-y;}
     .simvol-com-b {width: 978px; height: 48px; margin: 0 auto; background: url(../img/simvol-com-b.png) 0 0 no-repeat;}
         .simvol-img {float: left; margin: 0 26px 0 0;}
         .simvol-com-txt {overflow: hidden; margin: 0 0 0 202px;}
-            .simvol-com-txt h3 {color: #b2987f; margin: 0 0 30px; font: normal 40px 'PT Serif', serif; padding: 0;}
+            .simvol-com-txt h3 {color: #b2987f; margin: 0 0 15px; font: normal 40px 'PT Serif', serif; padding: 0;}
             .simvol-com-txt p {margin: 0 0 10px; font: normal 17px/27px 'PT Serif', serif; color: #b2977f;}
 .fason {padding: 0 0 64px;}
     .fason-h {padding: 0 0 10px; color: #47060f; font: normal 22px 'Roboto Slab';}
