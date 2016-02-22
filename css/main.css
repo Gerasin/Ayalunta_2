@@ -136,7 +136,7 @@ body {min-width: 1000px; font: 14px 'PT Serif', serif;}
 .symbol {position: relative; background: #f8f8f5;padding: 0 0 1px; background: url(../img/wave_pattern.jpg) center 0 repeat;}
     .logo {padding: 16px 0 28px; text-align: center; width: 198px; margin: 0 auto;}
         .logo img {vertical-align: top;}
-    .symbol-header {text-align: center;margin: 0 0 53px; font: normal normal 60px/60px 'PT Serif', serif;}
+    .symbol-header {text-align: center;margin: 0 0 53px; font: normal normal 60px/60px 'PT Serif', serif; color: #6e0b00;}
         .symbol-header sup {vertical-align: top; font-size: 20px; position: relative; top: 10px;}
     .symbol-tab {text-align: center;padding: 0 0 34px;}
         .symbol-tab ul {display: inline-block; padding: 0; margin: 0; font-size: 14px; border: 1px solid #020303;
@@ -562,7 +562,7 @@ body .popup-menu {position: absolute; left: 50%; top: 57px !important; width: 85
 .list-simvol {text-align: center;padding: 0 0 50px; margin: 0;}
     .list-simvol li {list-style: none; margin: 0 14px; display: inline-block; width: 49px; height: 49px; vertical-align: top;}
         .list-simvol li a {display: block; position: relative;}
-            .list-simvol li a:hover:before {position: absolute; content: ' '; top: -4px; left: -4px; display: block; width: 53px; height: 53px; border: 2px solid #bca185;
+            .list-simvol li a:hover:before {position: absolute; content: ' '; top: -5px; left: -5px; display: block; width: 55px; height: 55px; border: 2px solid #bca185;
                 -webkit-border-radius: 50%;
                 -moz-border-radius: 50%;
                 border-radius: 50%;}

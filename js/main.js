@@ -282,7 +282,7 @@ var popupStatus = 0;
 
 function loadPopup(popup){  
 	if(popupStatus==0){
-		$(".popup_bg").fadeIn("slow");
+		$(".popup_bg").fadeIn(10);
 		$(popup).fadeIn("slow");
 		var popupTop = $(window).scrollTop() + 50;
 		console.log(popupTop);
@@ -294,8 +294,8 @@ function loadPopup(popup){
 
 function loadPopupMenu(popup){  
 	if(popupStatus==0){
-		$(".popup_bg-w").fadeIn(100);
-		$(popup).fadeIn("slow");
+		$(".popup_bg-w").fadeIn(200);
+		$(popup).fadeIn(200);
 		var popupTop = $(window).scrollTop() + 50;
 		console.log(popupTop);
 		$(popup).css({ top : popupTop + 'px'});
@@ -305,8 +305,8 @@ function loadPopupMenu(popup){
 	
 function disablePopup(){ 
 	if(popupStatus==1){
-		$(".popup_bg, .popup_bg-w").fadeOut(100);
-		$(".popup").fadeOut("slow");
+		$(".popup_bg, .popup_bg-w").fadeOut(10);
+		$(".popup").fadeOut(200);
 		$('body').removeClass('bluer')
 		popupStatus = 0;
 	}
