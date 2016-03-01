@@ -1,4 +1,6 @@
 @import url('selectik.css');
+@import url('slick.css');
+
 
 
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
@@ -559,10 +561,10 @@ body .popup-menu {position: absolute; left: 50%; top: 57px !important; width: 85
     .lnk-lavka a {font-size: 14px; color: #47060f; text-decoration: underline; font-family: 'Times New Roman'; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid #886262;}
     .lnk-lavka a:hover {color: #ff0012; border-bottom: 1px solid #ff0012;}
         .lnk-lavka a span {font-size: 18px;}
-.list-simvol {text-align: center;padding: 0 0 50px; margin: 0;}
-    .list-simvol li {list-style: none; margin: 0 14px; display: inline-block; width: 49px; height: 49px; vertical-align: top;}
-        .list-simvol li a {display: block; position: relative;}
-            .list-simvol li a:hover:before {position: absolute; content: ' '; top: -5px; left: -5px; display: block; width: 55px; height: 55px; border: 2px solid #bca185;
+.list-simvol {text-align: center; padding: 0 0 50px; margin: 0;}
+    .list-simvol li {list-style: none; margin: 5px 14px; display: inline-block; width: 49px; height: 49px; vertical-align: top;}
+        .list-simvol li span {display: block; position: relative; cursor: pointer;}
+            .list-simvol li span:hover:before, .list-simvol li.slick-current  span:before {position: absolute; content: ' '; top: -5px; left: -5px; display: block; width: 55px; height: 55px; border: 2px solid #bca185;
                 -webkit-border-radius: 50%;
                 -moz-border-radius: 50%;
                 border-radius: 50%;}
@@ -594,6 +596,8 @@ body .popup-menu {position: absolute; left: 50%; top: 57px !important; width: 85
         .tab-border {border-right: 1px solid #020303;}
         .fason-tab li.active a {background: #9b7851; color: #fff; cursor: default !important;}
 
+
+body * {outline: none;}
 
 
 

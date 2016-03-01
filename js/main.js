@@ -229,7 +229,48 @@ $(document).ready(function() {
 	});
 
 
-	
+	// карусель на главной
+	 
+	$('.slider-nav').slick({
+	  slidesToShow: 11,
+	  slidesToScroll: 1,
+	  asNavFor: '.slider-for',
+	  dots: false,
+	  arrows: false,
+	  focusOnSelect: true
+	});
+	$('.slider-for').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: true,
+	  asNavFor: '.slider-nav'
+	});
+
+	$('.tab-next').click(function(){
+		var itemActive = $('.list-simvol .slick-current').index();
+		var itemMax = $('.list-simvol .slick-slide').length;
+		console.log(itemActive + ' - ' + itemMax);
+		if((itemActive + 1) == itemMax) {
+			$('.list-simvol .slick-slide').eq(0).click()
+		} else {
+			$('.list-simvol .slick-current').next().click()
+		};
+		return false;
+	});
+	$('.tab-prev').click(function(){
+		var itemActive = $('.list-simvol .slick-current').index();
+		var itemMax = $('.list-simvol .slick-slide').length;
+		console.log(itemActive + ' - ' + itemMax);
+		if(itemActive == 0) {
+			$('.list-simvol .slick-slide').eq(itemMax - 1).click()
+		} else {
+			$('.list-simvol .slick-current').prev().click()
+		};
+		return false;
+	});
+
+
 
 
 });
