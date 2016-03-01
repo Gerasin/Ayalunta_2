@@ -571,8 +571,8 @@ body .popup-menu {position: absolute; left: 50%; top: 57px !important; width: 85
 .simvol-tab {position: relative; text-align: center; width: 762px; height: 922px; margin: 0 auto -200px; position: relative;}
     .simvol-comment {position: absolute;top: 6px;left: -63px; width: 185px; font: normal 13px 'Roboto Slab'; text-align: left;}
         .simvol-comment h3 {font-size: 22px; font-weight: bold;margin: 0 0 5px;}
-.simvol-tab-cont {position: relative;}
-    .tab-next {position: absolute;right: 12px;top: 124px; width: 62px; height: 97px; background: url(../img/arrows.png) -124px 0 no-repeat;}
+.simvol-tab-cont {position: relative; overflow: hidden;}
+    .tab-next {position: absolute;right: 12px;top: 124px; width: 62px; height: 97px; background: url(../img/arrows.png) -124px 0 no-repeat; z-index: 30;}
     .tab-prev {position: absolute;left: 3px; top: 122px; width: 62px; height: 97px; background: url(../img/arrows.png) -62px 0 no-repeat;}
     .tab-next:hover {background-position: -186px 0;}
     .tab-prev:hover {background-position: 0 0;}
