@@ -269,6 +269,11 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$('.slider-for').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		nextSlideN = nextSlide;
+		$('.list-simvol .slick-slide').eq(nextSlideN).click()
+	});
+
 
 
 
